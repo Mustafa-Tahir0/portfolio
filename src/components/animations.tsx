@@ -1,13 +1,14 @@
 import * as motion from "motion/react-client";
-import { useRef, useLayoutEffect, useState, useMemo } from "react";
+import { ReactNode, useRef, useLayoutEffect, useState, useMemo } from "react";
 
 type EnterAnimationProps = {
     className: string;
     offset?: boolean[];
     centerAnimation?: boolean;
+    children?: ReactNode;
 };
 
-export function EnterAnimation({ className, offset = [false, false], centerAnimation = false }: EnterAnimationProps) {
+export function EnterAnimation({ className, offset = [false, false], centerAnimation = false, children }: EnterAnimationProps) {
     const elementRef = useRef<HTMLDivElement | null>(null);
     const [finalOffset, setFinalOffset] = useState<[number, number] | null>(null);
 
@@ -68,8 +69,11 @@ export function EnterAnimation({ className, offset = [false, false], centerAnima
             style={{
                 borderRadius: "16px",
                 width: "100%",
-                height: "100%"
+                height: "100%",
+                padding: "1.5rem"
             }}
-        />
+        >
+            { children }
+        </motion.div>
     );
 }

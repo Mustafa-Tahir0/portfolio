@@ -10,3 +10,13 @@ body {
 html {
   font-size: 1vw;
 }
+
+.font-heading {
+  font-family: var(--font-dm-serif);
+  color: #DBD0C3;
+}
+
+.font-medium {
+  font-family: var(--font-dm-sans);
+  color: #DBD0C3;
+}
