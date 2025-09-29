@@ -86,7 +86,7 @@ export default function Home() {
                 </motion.div>
 
                 <p className="text-xl max-w-[30rem] leading-[135%] text-center">
-                  I'm Mustafa Tahir, a Computer Science and Economics student at WashU ('27)
+                  I&apos;m Mustafa Tahir, a Computer Science and Economics student at WashU (&apos;27)
                   with experience in full-stack development and machine learning.
                   I enjoy building scalable, user-focused projects that blend technical depth with real-world impact.
                 </p>
