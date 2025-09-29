@@ -5,13 +5,19 @@ type EnterAnimationProps = {
     className: string;
     offset?: boolean[];
     centerAnimation?: boolean;
+    noVerticalPadding?: boolean; // <--- new prop
     children?: ReactNode;
 };
 
-export function EnterAnimation({ className, offset = [false, false], centerAnimation = false, children }: EnterAnimationProps) {
+export function EnterAnimation({
+    className,
+    offset = [false, false],
+    centerAnimation = false,
+    noVerticalPadding = false, // default false
+    children
+}: EnterAnimationProps) {
     const elementRef = useRef<HTMLDivElement | null>(null);
     const [finalOffset, setFinalOffset] = useState<[number, number] | null>(null);
-
     const memoOffset = useMemo(() => offset, [offset[0], offset[1]]);
 
     useLayoutEffect(() => {
@@ -70,10 +76,13 @@ export function EnterAnimation({ className, offset = [false, false], centerAnima
                 borderRadius: "16px",
                 width: "100%",
                 height: "100%",
-                padding: "1.5rem"
+                paddingTop: noVerticalPadding ? 0 : "1.5rem",
+                paddingBottom: noVerticalPadding ? 0 : "1.5rem",
+                paddingLeft: "1.5rem",
+                paddingRight: "1.5rem"
             }}
         >
-            { children }
+            {children}
         </motion.div>
     );
 }
