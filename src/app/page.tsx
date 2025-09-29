@@ -133,7 +133,7 @@ export default function Home() {
                 }}
               >
                 <Image
-                  src="/assets/Profile2.JPG"
+                  src="/assets/prof.jpg"
                   className="w-full h-full object-cover transform-gpu"
                   fill
                   alt="masked"

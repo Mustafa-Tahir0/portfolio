@@ -95,6 +95,7 @@ export default function ProjectAccordion() {
                   className={`transform-gpu size-[0.9rem] transition-opacity ${
                     isOpen ? "opacity-100" : "opacity-0"
                   }`}
+                  priority
                 />
               </motion.div>
             </div>
@@ -131,6 +132,7 @@ export default function ProjectAccordion() {
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 ease-out hover:scale-105"
+                      priority
                     />
                   </motion.a>
                 </motion.div>
