@@ -82,7 +82,7 @@ export default function Home() {
                     ease: "easeOut",
                   }}
                 >
-                  <Image src="/assets/kscope.svg" alt="enhance icon" fill />
+                  <Image src="/assets/kscope.svg" alt="enhance icon" fill priority/>
                 </motion.div>
 
                 <p className="text-xl max-w-[30rem] leading-[135%] text-center">
@@ -102,7 +102,7 @@ export default function Home() {
                     ease: "easeOut",
                   }}
                 >
-                  <Image src="/assets/kscope.svg" alt="enhance icon" fill />
+                  <Image src="/assets/kscope.svg" alt="enhance icon" fill priority/>
                 </motion.div>
               </div>
             </EnterAnimation>
@@ -137,6 +137,7 @@ export default function Home() {
                   className="w-full h-full object-cover transform-gpu"
                   fill
                   alt="masked"
+                  priority
                 />
               </motion.div>
             )}
