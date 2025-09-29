@@ -40,19 +40,6 @@ export default function Home() {
         <div className="col-span-full row-span-1">
           <EnterAnimation className="bg-[#313658]">
             <nav className="flex size-full items-center justify-between max-lg:gap-4 max-md:flex-col max-md:justify-center">
-              {/* <div className="logo flex items-end gap-2 overflow-hidden font-heading text-2xl font-normal">
-                <span className="block">Mustafa Tahir</span>
-                <div className="overflow-hidden">
-                  <motion.img
-                  src="/assets/cat.svg"
-                  alt="Cat"
-                  className="w-7 h-7 pb-1"
-                  initial={{ y: 50 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94], delay: 1.85 }}
-                />
-                </div>
-              </div> */}
               <div className="logo flex items-center gap-2 font-heading text-2xl font-normal">
                 <span className="block">Mustafa Tahir</span>
                 <div className="overflow-hidden self-center">
