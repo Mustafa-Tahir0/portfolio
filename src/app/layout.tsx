@@ -28,7 +28,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Mustafa Tahir",
-  description: "Mustafa Tahir's Portfolio",
+  description: "Mustafa Tahir's Portfolio"
 };
 
 export default function RootLayout({
