@@ -10,10 +10,10 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { title: "Media Menu", link: "https://mediamenu.vercel.app", image: "/assets/mediamenu.png" },
-  { title: "Outfit of the Day", link: "https://github.com/Mustafa-Tahir0/OutfitOfTheDay", image: "/assets/ootd.png" },
   { title: "RepoIntel", link: "https://elcalzalt.pythonanywhere.com", image: "/assets/repointel.png" },
   { title: "Simple MNIST Neural Network", link: "https://www.kaggle.com/code/tahiro09/neural-network", image: "/assets/mnist.png" },
+  { title: "Outfit of the Day", link: "https://github.com/Mustafa-Tahir0/OutfitOfTheDay", image: "/assets/ootd.png" },
+  { title: "Media Menu", link: "https://mediamenu.vercel.app", image: "/assets/mediamenu.png" },
   { title: "WashU4Wellness", link: "https://github.com/ambijani/WashU4Wellness", image: "/assets/wellness.png" },
   { title: "Yappers", link: "https://github.com/Mustafa-Tahir0/Yappers", image: "/assets/yappers.webp" },
 ];
@@ -44,7 +44,7 @@ export default function ProjectAccordion() {
         return (
           <motion.button
             key={project.title}
-            className="button relative pb-[calc(1.8rem-2px)] text-left pt-[1.8rem]"
+            className={`${!isOpen && "cursor-pointer"} button relative pb-[calc(1.8rem-2px)] text-left pt-[1.8rem]`}
             onClick={() => setOpenIndex(index)}
             variants={{}}
           >

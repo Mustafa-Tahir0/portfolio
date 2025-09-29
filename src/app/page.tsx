@@ -40,18 +40,32 @@ export default function Home() {
         <div className="col-span-full row-span-1">
           <EnterAnimation className="bg-[#313658]">
             <nav className="flex size-full items-center justify-between max-lg:gap-4 max-md:flex-col max-md:justify-center">
-              <div className="logo flex items-center gap-2 overflow-hidden font-heading text-2xl font-normal">
+              {/* <div className="logo flex items-end gap-2 overflow-hidden font-heading text-2xl font-normal">
                 <span className="block">Mustafa Tahir</span>
-                <motion.img
+                <div className="overflow-hidden">
+                  <motion.img
                   src="/assets/cat.svg"
                   alt="Cat"
-                  className="w-8 h-8"
-                  initial={{ y: "100%", opacity: 0 }}
-                  animate={{ y: "0%", opacity: 1 }}
+                  className="w-7 h-7 pb-1"
+                  initial={{ y: 50 }}
+                  animate={{ y: 0 }}
                   transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94], delay: 1.85 }}
                 />
+                </div>
+              </div> */}
+              <div className="logo flex items-center gap-2 font-heading text-2xl font-normal">
+                <span className="block">Mustafa Tahir</span>
+                <div className="overflow-hidden self-center">
+                  <motion.img
+                    src="/assets/cat.svg"
+                    alt="Cat"
+                    className="w-7"
+                    initial={{ y: "100%" }}
+                    animate={{ y: "0%" }}
+                    transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94], delay: 1.85 }}
+                  />
+                </div>
               </div>
-
               <div className="cta flex items-center gap-4">
                 <a
                   href="mailto:mustafa.tahir0427@gmail.com"
@@ -59,7 +73,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <button className="bg-[#19233C] rounded-xl border px-4 py-3 pt-3.5 font-medium uppercase text-primary">
+                  <button className="cursor-pointer clickable bg-[#19233C] rounded-xl border px-4 py-3 pt-3.5 font-medium uppercase text-primary">
                     Get in Touch
                   </button>
                 </a>
@@ -82,7 +96,7 @@ export default function Home() {
                     ease: "easeOut",
                   }}
                 >
-                  <Image src="/assets/kscope.svg" alt="enhance icon" fill priority/>
+                  <Image src="/assets/kscope.svg" alt="enhance icon" fill priority />
                 </motion.div>
 
                 <p className="text-xl max-w-[30rem] leading-[135%] text-center">
@@ -102,7 +116,7 @@ export default function Home() {
                     ease: "easeOut",
                   }}
                 >
-                  <Image src="/assets/kscope.svg" alt="enhance icon" fill priority/>
+                  <Image src="/assets/kscope.svg" alt="enhance icon" fill priority />
                 </motion.div>
               </div>
             </EnterAnimation>
@@ -206,7 +220,7 @@ export default function Home() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex overflow-hidden text-base font-medium uppercase leading-[100%]"
+                    className="flex overflow-hidden text-base font-medium uppercase leading-[100%] pb-1 pt-1"
                   >
                     <motion.span
                       className="social-link inline-block"
