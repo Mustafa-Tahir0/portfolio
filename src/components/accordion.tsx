@@ -10,7 +10,7 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { title: "RepoIntel", link: "https://elcalzalt.pythonanywhere.com", image: "/assets/repointel.png" },
+  { title: "RepoIntel", link: "https://mustafatahir09.pythonanywhere.com", image: "/assets/repointel.png" },
   { title: "Simple MNIST Neural Network", link: "https://www.kaggle.com/code/tahiro09/neural-network", image: "/assets/mnist.png" },
   { title: "Outfit of the Day", link: "https://github.com/Mustafa-Tahir0/OutfitOfTheDay", image: "/assets/ootd.png" },
   { title: "Media Menu", link: "https://mediamenu.vercel.app", image: "/assets/mediamenu.png" },
