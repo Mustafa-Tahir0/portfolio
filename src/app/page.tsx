@@ -153,8 +153,8 @@ export default function Home() {
               />
             </EnterAnimation>
           </div>
-          <div className="col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:hidden">
-            <EnterAnimation className="bg-[#19233C] w-full h-full" offset={[false, false]} centerAnimation={true}>
+          <div className="col-span-4 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full">
+            <EnterAnimation className="bg-[#19233C] w-full h-full" offset={[true, false]} centerAnimation={true}>
               <SkillsGrid
                 skills={['Bash', 'C/C++', 'HTML/CSS', 'Java', 'JavaScript',
                   'Kotlin', 'Next.js', 'PHP', 'Python', 'R', 'React',
